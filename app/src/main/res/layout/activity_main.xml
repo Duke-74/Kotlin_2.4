@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    style="@style/tvTitle"
+    tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/km"
+            style="@style/etStyle"
+            android:hint="в км"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/km"
+            android:layout_weight="4"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/m"
+            style="@style/etStyle"
+            android:hint="в м"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/m"
+            android:layout_weight="4"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dm"
+            style="@style/etStyle"
+            android:hint="в дм"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/dm"
+            android:layout_weight="4"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sm"
+            style="@style/etStyle"
+            android:hint="в cм"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sm"
+            android:layout_weight="4"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mm"
+            style="@style/etStyle"
+            android:hint="в мм"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/mm"
+            android:layout_weight="4"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/inspect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inspect"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/result"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="1"/>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
